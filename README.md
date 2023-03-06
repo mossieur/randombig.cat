@@ -1,4 +1,7 @@
 # randombig.cat
+
+[![Discord](https://img.shields.io/discord/267292556709068800.svg?color=7289da&label=Discord&logo=discord&logoColor=white&cacheSeconds=3600)](https://discord.gg/HmDXVVb7rw)
+
 roar
 
 [Invite Discord Bot](https://discord.com/oauth2/authorize?client_id=1082270646131765258&permissions=537159744&scope=applications.commands%20bot)
