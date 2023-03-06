@@ -1,6 +1,6 @@
 # randombig.cat
 
-[![Discord](https://img.shields.io/discord/267292556709068800.svg?color=7289da&label=Discord&logo=discord&logoColor=white&cacheSeconds=3600)](https://discord.gg/HmDXVVb7rw)
+[![Discord](https://img.shields.io/discord/1081152759929245726.svg?color=7289da&label=Discord&logo=discord&logoColor=white&cacheSeconds=3600)](https://discord.gg/HmDXVVb7rw)
 
 roar
 
