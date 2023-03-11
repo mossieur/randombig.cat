@@ -1,11 +1,33 @@
 const { Client, Events, GatewayIntentBits, ActivityType } = require('discord.js');
 const { createAudioPlayer, createAudioResource , StreamType, demuxProbe, joinVoiceChannel, NoSubscriberBehavior, AudioPlayerStatus, VoiceConnectionStatus, getVoiceConnection } = require('@discordjs/voice')
 const fetch = require('node-fetch');
+const https = require('https');
+const fs = require('fs');
 const client = new Client({
 	intents: [GatewayIntentBits.Guilds, GatewayIntentBits.GuildMessages, GatewayIntentBits.GuildMessageReactions,   GatewayIntentBits.GuildVoiceStates],
 });
 
 client.on('ready', () => {
+	function avatar () {
+		try {
+			fetch('https://randombig.cat/roar.json?include=jpg')
+			.then(res => res.json())
+			.then((json) => {
+				const file = fs.createWriteStream('./avatar.jpg');
+				const request = https.get(json.url, function(response) {
+					response.pipe(file);
+					file.on('finish', () => {
+						file.close();
+						client.user.setAvatar('./avatar.jpg');
+					});
+				});
+			});
+		} catch(err) {
+			console.log(err);
+		}
+
+	}
+
 	function presence () {
 		client.user.setPresence({ status: 'dnd' });
 		client.user.setActivity(`${client.guilds.cache.size} servers`, { type: ActivityType.Watching });
@@ -45,6 +67,11 @@ client.on('ready', () => {
 	}
 
 	radiostream();
+
+	avatar();
+	setTimeout(() => {
+		avatar();
+	}, 600000000);
 
 	presence();
 	setTimeout(() => {
