@@ -71,7 +71,7 @@ client.on('ready', () => {
 	avatar();
 	setTimeout(() => {
 		avatar();
-	}, 600000000);
+	}, 600000);
 
 	presence();
 	setTimeout(() => {
