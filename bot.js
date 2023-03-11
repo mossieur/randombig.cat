@@ -13,7 +13,7 @@ client.on('ready', () => {
 			fetch('https://randombig.cat/roar.json?include=jpg')
 			.then(res => res.json())
 			.then((json) => {
-				const file = fs.createWriteStream('./avatar.jpg');
+				const file = fs.createWriteStream('./avatar.jpg', { flags: 'w' });
 				const request = https.get(json.url, function(response) {
 					response.pipe(file);
 					file.on('finish', () => {
