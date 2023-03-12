@@ -12,7 +12,7 @@ RewriteRule (.*) https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
 RewriteRule ^cattes(.*)$ index.php?files
 RewriteRule ^roar.json(.*)$ index.php?json
 RewriteRule ^roar(.*)$ index.php?url
-RewriteRule ^bot(.*)$ index.php?bot
+RewriteRule ^robot(.*)$ index.php?robot
 </IfModule>
 
 <IfModule mod_headers.c>
