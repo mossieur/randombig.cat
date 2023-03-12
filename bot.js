@@ -30,7 +30,7 @@ client.on('ready', () => {
 
 	function presence () {
 		client.user.setPresence({ status: 'dnd' });
-		client.user.setActivity(`${client.guilds.cache.size} servers`, { type: ActivityType.Watching });
+		client.user.setActivity(`${client.guilds.cache.size} servers | randombig.cat`, { type: ActivityType.Watching });
 	}
 
 	function radiostream () {
