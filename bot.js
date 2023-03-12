@@ -69,12 +69,12 @@ client.on('ready', () => {
 	radiostream();
 
 	avatar();
-	setTimeout(() => {
+	setInterval(() => {
 		avatar();
 	}, 600000);
 
 	presence();
-	setTimeout(() => {
+	setInterval(() => {
 		presence();
 	}, 60000);
 
@@ -107,4 +107,4 @@ client.on('messageCreate', async (message) => {
 	}
 });
 
-client.login(TOKEN);
+client.login('MTA4MjI3MDY0NjEzMTc2NTI1OA.G8t-nj.WCB8eqPKw9KvLlf4dEMfiWFMKNCbObrWEH1Djk');
