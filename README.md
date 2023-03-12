@@ -1,7 +1,5 @@
 # randombig.cat
 
-roar
-
 The php code behind [randombig.cat](https://randombig.cat)
 
 [Invite Discord Bot](https://discord.com/oauth2/authorize?client_id=1082270646131765258&permissions=537159744&scope=applications.commands%20bot)
