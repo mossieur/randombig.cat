@@ -234,7 +234,8 @@ if( $path['extension'] !== 'mp4' && $path['extension'] !== 'webm')
 							<a href="/cattes">/cattes</a>
 						</td>
 						<td itemscope itemtype="http://schema.org/Organization">
-							<a href="/" itemprop="url">@<span itemprop="name">randombigcat</span></a>
+							<a href="/" itemprop="url">@<span itemprop="name">randombigcat</span></a> |
+							<a href="https://github.com/mossieur/randombig.cat">github</a>
 						</td>
 					</tr>
 				</table>
