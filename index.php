@@ -134,7 +134,7 @@ elseif( isset( $_GET['files'] ) )
 	header( 'Content-Type: application/json' );
 	echo str_replace( __DIR__ . '/', '', json_encode( $files, JSON_UNESCAPED_SLASHES ) );
 }
-elseif( isset( $_GET['bot'] ) )
+elseif( isset( $_GET['robot'] ) )
 {
 	header('Location: https://discord.com/oauth2/authorize?client_id=1082270646131765258&permissions=537159744&scope=applications.commands%20bot');
 	exit;
