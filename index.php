@@ -215,7 +215,7 @@ if( $path['extension'] !== 'mp4' && $path['extension'] !== 'webm')
 						}
 						else
 						{
-							echo '<img id="bigcat-img" alt="" src="/' . basename( $file ) . '">';
+							echo '<img id="bigcat-img" alt="Random Big Cat Picture" src="/' . basename( $file ) . '">';
 						}
 						?>
 						
